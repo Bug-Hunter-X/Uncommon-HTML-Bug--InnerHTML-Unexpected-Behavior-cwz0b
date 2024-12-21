@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug Solution</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text is initially visible.
+  </div>
+  <button onclick="myFunction()">Click Me</button>
+
+  <script>
+    function myFunction() {
+      setTimeout(function(){ 
+        document.getElementById("myDiv").innerText = "This text is now invisible.";
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
